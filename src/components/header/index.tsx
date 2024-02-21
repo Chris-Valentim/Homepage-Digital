@@ -2,40 +2,80 @@ import * as S from './styles'
 import cdcDigital from '../assets/cdcDigital.svg'
 import avatar from '../assets/avatar.svg'
 import rectangle from '../assets/rectangle.svg'
+import Magnifier from '../assets/magnifier.svg'
 
 const Header = () => {
   return (
     <div>
-      <div>
-        <img 
-          src={cdcDigital} 
-          alt="logo da empresa" 
+      <S.HeaderTop>
+        <img
+          src={cdcDigital}
+          alt="logo da empresa"
         />
-        <input type="text" />
         <div>
-          <p>
+          <S.IconButton>
+            <img 
+              src={Magnifier} 
+              alt="Lupa de Pesquisa" 
+            />
+          </S.IconButton>
+          <S.Search 
+            type="text" 
+            placeholder='buscar...'
+          />
+        </div>
+        <S.Profile>
+          <S.Name>
             Olá, Marco Antônio! Design, Casa Di Condi
-          </p>
-          <img src={avatar} alt="Avatar" />
-        </div>
-      </div>
-      <nav>
-        <div>
-          <img src={rectangle} alt="Ícone do Menu" />
-          <p></p>
-         <div>vector</div>
-        </div>
-        <p>Página principal</p>
-        <p>Notícias</p>
-        <p>Caixa de entrada</p>
-        <p>Oportunidades internas</p>
-        <p>Conti Cast</p>
-        <p>Telefone/Ramais</p>
-        <p>Aniversariantes do Mês</p>
-        <p>Fale conosco</p>
-        <div>vector</div>
-        <h3>#SOMOS TODOS CDC</h3>
-      </nav>
+          </S.Name>
+          <S.Avatar
+            src={avatar}
+            alt="Avatar"
+          />
+        </S.Profile>
+      </S.HeaderTop>
+      <S.HeaderBottom>
+        <S.Navegation>
+          <S.MenuHamburger>
+            <img
+              src={rectangle}
+              alt="Ícone do Menu"
+            />
+            <S.List>
+              <a href="/">todos</a>
+            </S.List>
+            <S.VectorIcon />
+          </S.MenuHamburger>
+          <S.List>
+            <a href="/">Página principal</a>
+          </S.List>
+          <S.List>
+            <a href="/">Notícias</a>
+          </S.List>
+          <S.List>
+            <a href="/">Caixa de entrada</a>
+          </S.List>
+          <S.List>
+            <a href="/">Oportunidades internas</a>
+          </S.List>
+          <S.List>
+            <a href="/">Conti Cast</a>
+          </S.List>
+          <S.List>
+            <a href="/">Telefone/Ramais</a>
+          </S.List>
+          <S.List>
+            <a href="/">Aniversariantes do Mês</a>
+          </S.List>
+          <S.Contact>
+            <S.List>
+              <a href="/">Fale conosco</a>
+            </S.List>
+            <S.VectorIcon />
+          </S.Contact>
+        </S.Navegation>
+          <p>#SOMOS TODOS CDC</p>
+      </S.HeaderBottom>
     </div>
   )
 }
