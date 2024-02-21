@@ -2,7 +2,6 @@ import * as S from './styles'
 import cdcDigital from '../assets/cdcDigital.svg'
 import avatar from '../assets/avatar.svg'
 import rectangle from '../assets/rectangle.svg'
-import Magnifier from '../assets/magnifier.svg'
 
 const Header = () => {
   return (
@@ -12,23 +11,18 @@ const Header = () => {
           src={cdcDigital}
           alt="logo da empresa"
         />
-        <div>
-          <S.IconButton>
-            <img 
-              src={Magnifier} 
-              alt="Lupa de Pesquisa" 
-            />
-          </S.IconButton>
-          <S.Search 
+        <S.Search>
+          <S.ImageSearch />
+          <S.Input 
             type="text" 
             placeholder='buscar...'
           />
-        </div>
+        </S.Search>
         <S.Profile>
           <S.Name>
             Olá, Marco Antônio! Design, Casa Di Condi
           </S.Name>
-          <S.Avatar
+          <img
             src={avatar}
             alt="Avatar"
           />
@@ -41,40 +35,42 @@ const Header = () => {
               src={rectangle}
               alt="Ícone do Menu"
             />
-            <S.List>
-              <a href="/">todos</a>
-            </S.List>
+              <S.List href="/">
+                todos
+              </S.List>
             <S.VectorIcon />
           </S.MenuHamburger>
-          <S.List>
-            <a href="/">Página principal</a>
-          </S.List>
-          <S.List>
-            <a href="/">Notícias</a>
-          </S.List>
-          <S.List>
-            <a href="/">Caixa de entrada</a>
-          </S.List>
-          <S.List>
-            <a href="/">Oportunidades internas</a>
-          </S.List>
-          <S.List>
-            <a href="/">Conti Cast</a>
-          </S.List>
-          <S.List>
-            <a href="/">Telefone/Ramais</a>
-          </S.List>
-          <S.List>
-            <a href="/">Aniversariantes do Mês</a>
-          </S.List>
-          <S.Contact>
-            <S.List>
-              <a href="/">Fale conosco</a>
+            <S.List href="/">
+              Página principal
             </S.List>
+            <S.List href="/">
+              Notícias
+            </S.List>
+            <S.List href="/">
+              Caixa de entrada
+            </S.List>
+            <S.List href="/">
+              Oportunidades internas
+            </S.List>
+            <S.List href="/">
+              Conti Cast
+            </S.List>
+            <S.List href="/">
+              Telefone/Ramais
+            </S.List>
+            <S.List href="/">
+              Aniversariantes do Mês
+            </S.List>
+          <S.Contact>
+              <S.List href="/">
+                Fale conosco
+              </S.List>
             <S.VectorIcon />
           </S.Contact>
         </S.Navegation>
-          <p>#SOMOS TODOS CDC</p>
+          <S.Hashtag>
+            <S.StyledHashtag>#</S.StyledHashtag>SOMOS <S.StyledHashtag>TODOS</S.StyledHashtag> CDC
+          </S.Hashtag>
       </S.HeaderBottom>
     </div>
   )
