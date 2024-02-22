@@ -30,6 +30,9 @@ export const Input = styled.input`
   height: 60px;
   border: 1px solid #fff;
   border-radius: 0 20px 20px 0;
+
+  outline: none;
+  font-size: 18px;
 `
 
 export const Profile = styled.div`
@@ -59,6 +62,7 @@ export const Navegation = styled.nav`
   gap: 30px;
   margin-top: 17px;
   margin-bottom: 17px;
+  margin-left: 29px;
 `
 
 export const VectorIcon = styled.div`
