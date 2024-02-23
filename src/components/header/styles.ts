@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import vector from '../assets/vector.svg'
+import arrowBottom from '../assets/arrowBottom.svg'
 import Magnifier from '../assets/magnifier.svg'
 
 export const HeaderTop = styled.div`
@@ -65,8 +65,8 @@ export const Navegation = styled.nav`
   margin-left: 29px;
 `
 
-export const VectorIcon = styled.div`
-  background-image: url(${vector});
+export const ArrowBottomIcon = styled.div`
+  background-image: url(${arrowBottom});
   background-repeat: no-repeat;
   height: 5px;
   width: 8px;

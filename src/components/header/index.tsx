@@ -38,7 +38,7 @@ const Header = () => {
               <S.List href="/">
                 todos
               </S.List>
-            <S.VectorIcon />
+            <S.ArrowBottomIcon />
           </S.MenuHamburger>
             <S.List href="/">
               Página principal
@@ -65,7 +65,7 @@ const Header = () => {
               <S.List href="/">
                 Fale conosco
               </S.List>
-            <S.VectorIcon />
+            <S.ArrowBottomIcon />
           </S.Contact>
         </S.Navegation>
           <S.Hashtag>

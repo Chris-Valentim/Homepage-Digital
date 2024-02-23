@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import Line from '../assets/line.svg'
 
+export const Wrapper = styled.div`
+  margin-top: 42px;
+`
+
 export const Header = styled.div`
   display: flex;
   justify-content: center;
@@ -13,7 +17,6 @@ export const Title = styled.h1`
   font-size: 51px;
   font-weight: 300;
   
-  margin-top: 30px;
   margin-bottom: 30px;
 `
 

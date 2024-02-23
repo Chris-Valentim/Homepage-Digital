@@ -6,7 +6,7 @@ import Avatar2 from '../assets/avatar2.svg'
 
 const Content = () => {
   return (
-    <div>
+    <S.Wrapper>
       <S.Header>
         <S.LineLeft />
         <S.Title>
@@ -79,7 +79,7 @@ const Content = () => {
           />
         </S.Comments>
       </S.Description>
-    </div>
+    </S.Wrapper>
   )
 }
 
