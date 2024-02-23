@@ -1,19 +1,14 @@
 import * as S from './styles'
-import Emoji from '../assets/emoji.svg'
 import Photo1 from '../assets/photo1.svg'
-import Avatar2 from '../assets/avatar2.svg'
-
+import GuideTitle from './guideTitle'
+import Text from './text'
+import ReactButton from './reactButton'
+import Comments from './comments'
 
 const Content = () => {
   return (
     <S.Wrapper>
-      <S.Header>
-        <S.LineLeft />
-        <S.Title>
-          Notícias
-        </S.Title>
-        <S.LineRight />
-      </S.Header>
+      <GuideTitle />
       <S.Container>
         <S.Subtitle>
           Novo visual do CDC digital
@@ -30,54 +25,16 @@ const Content = () => {
         </S.DescriptionPhoto>
       </S.Photo>
       <S.Description>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quis nobis suscipit sequi necessitatibus facilis. Soluta quos animi nulla in harum, commodi blanditiis repellat deleniti ducimus consequuntur molestias consectetur molestiae?
-        </p>
-        <S.ReactButton>
-          <S.ButtonLike>
-            <img 
-              src={Emoji} 
-              alt="Botão de gostei" 
-            />
-          </S.ButtonLike>
-          <S.ButtonDeslike>
-            <img 
-              src={Emoji} 
-              alt="Botão de não gostei" 
-            />
-          </S.ButtonDeslike>
-        </S.ReactButton>
-        <S.Comments>
-          <img 
-            src={Avatar2} 
-            alt="avatar" 
-          />
-          <S.Input 
-            type="text" 
-            placeholder='Adicione um comentário'
-          />
-        </S.Comments>
+        <Text />
+        <Text />
+        <Text />
+        <Text />
+        <Text />
+        <Text />
+        <Text />
+        <Text />
+        <ReactButton />
+        <Comments />
       </S.Description>
     </S.Wrapper>
   )

@@ -25,7 +25,7 @@ const ContentBottom2 = () => {
           </div>
           <S.InfoCard>
             <S.TitleCard>
-              APP CDC
+              Vacina
             </S.TitleCard>
             <S.Description>
               Lorem ipsum dolor sit amet, consectetur
@@ -92,11 +92,10 @@ const ContentBottom2 = () => {
               src={Photo2}
               alt="Fotografia"
             />
-            
           </div>
           <S.InfoCard>
             <S.TitleCard>
-              Agora você
+              Novas politicas
             </S.TitleCard>
             <S.Description>
               Lorem ipsum dolor sit amet, consectetur

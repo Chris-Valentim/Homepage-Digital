@@ -3,6 +3,7 @@ import Foundation from '../assets/foundation.svg'
 import Ball from '../assets/ball.svg'
 
 export const Wrapper = styled.div`
+  width: 100vw;
   margin-top: 39px;
   margin-left: 30px;
   margin-right: 30px;
@@ -80,7 +81,12 @@ export const Button = styled.div`
   display: flex;
   align-items: center;
 
+  width: 115px;
   gap: 6px;
+
+  &:hover{
+    cursor: pointer;
+  }
 `
 
 export const Date = styled.p`
@@ -111,9 +117,17 @@ export const Guide = styled.div`
 export const ArrowLeft = styled.button`
   background-color: #fff;
   border: none;
+
+  &:hover{
+    cursor: pointer;
+  }
 `
 
 export const ArrowRight = styled.button`
   background-color: #fff;
   border: none;
+
+  &:hover{
+    cursor: pointer;
+  }
 `
