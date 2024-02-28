@@ -1,11 +1,11 @@
 import * as S from './styles'
-import Photo1 from '../assets/photo1.svg'
-import GuideTitle from './guideTitle'
-import Text from './text'
-import ReactButton from './reactButton'
-import Comments from './comments'
+import Photo1 from '../../assets/photo1.svg'
+import { GuideTitle } from './GuideTitle'
+import { Text } from './Text'
+import { ReactButton } from './ReactButton'
+import { Comments } from './Comments'
 
-const Content = () => {
+export const Content = () => {
   return (
     <S.Wrapper>
       <GuideTitle />
@@ -19,7 +19,7 @@ const Content = () => {
       </S.Container>
       <S.Division />
       <S.Photo>
-        <img src={Photo1} alt="Fotográfia" />
+        <S.Image src={Photo1} alt="Fotográfia" />
         <S.DescriptionPhoto>
           foto tirada pelo fotógrafo Carlos no dia 01/01/2022
         </S.DescriptionPhoto>
@@ -39,5 +39,3 @@ const Content = () => {
     </S.Wrapper>
   )
 }
-
-export default Content

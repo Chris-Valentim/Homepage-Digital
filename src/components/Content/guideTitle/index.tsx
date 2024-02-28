@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-const GuideTitle = () => {
+export const GuideTitle = () => {
   return (
     <S.Header>
       <S.LineLeft />
@@ -11,5 +11,3 @@ const GuideTitle = () => {
     </S.Header>
   )
 }
-
-export default GuideTitle

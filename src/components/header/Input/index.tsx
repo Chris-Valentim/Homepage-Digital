@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-const Input = () => {
+export const Input = () => {
   return (
     <S.Search>
       <S.ImageSearch />
@@ -11,6 +11,3 @@ const Input = () => {
     </S.Search>
   )
 }
-
-export default Input
-

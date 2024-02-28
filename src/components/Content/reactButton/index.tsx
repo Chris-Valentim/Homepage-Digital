@@ -1,23 +1,35 @@
+import { useState } from 'react'
 import * as S from './styles'
-import Emoji from '../../assets/emoji.svg'
 
-const ReactButton = () => {
+import { AiOutlineLike } from "react-icons/ai"
+import { BiSolidLike, BiDislike, BiSolidDislike } from "react-icons/bi"
+
+export const ReactButton = () => {
+  const [isLike, setIsLike] = useState<boolean>(false)
+  const [isDislike, setIsDislike] = useState<boolean>(false)
+
+  const handleLike = () => {
+    setIsLike(!isLike)
+    setIsDislike(false)
+  }
+
+  const handleDislike = () => {
+    setIsDislike(!isDislike)
+    setIsLike(true)
+  }
+
   return (
     <S.Wrapper>
-      <S.ButtonLike>
-        <img
-          src={Emoji}
-          alt="Botão de gostei"
-        />
-      </S.ButtonLike>
-      <S.ButtonDeslike>
-        <img
-          src={Emoji}
-          alt="Botão de não gostei"
-        />
-      </S.ButtonDeslike>
+        <S.ButtonLike onClick={handleLike}>
+         {
+          isLike ? <AiOutlineLike color='#4C51D9' size={30}/> : <BiSolidLike color='#4C51D9' size={30} />
+        } 
+        </S.ButtonLike>
+        <S.ButtonDeslike onClick={handleDislike}>
+        {
+          isDislike ? <BiSolidDislike color='#4C51D9' size={30} />  : <BiDislike color='#4C51D9' size={30} />
+        }
+        </S.ButtonDeslike>
     </S.Wrapper>
   )
 }
-
-export default ReactButton 

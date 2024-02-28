@@ -1,7 +1,7 @@
 import * as S from './styles'
-import Avatar2 from '../../assets/avatar2.svg'
+import Avatar2 from '../../../assets/avatar2.svg'
 
-const Comments = () => {
+export const Comments = () => {
   return (
     <S.Comments>
       <img
@@ -15,5 +15,3 @@ const Comments = () => {
     </S.Comments>
   )
 }
-
-export default Comments

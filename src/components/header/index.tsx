@@ -1,12 +1,12 @@
 import * as S from './styles'
-import cdcDigital from '../assets/cdcDigital.svg'
-import Input from './Input'
-import Profile from './Profile'
-import Navegation from './Navegation'
+import cdcDigital from '../../assets/cdcDigital.svg'
+import { Input } from './Input'
+import { Profile } from './Profile'
+import { Navegation } from './Navegation'
 
-const Header = () => {
+export const Header = () => {
   return (
-    <div>
+    <>
       <S.HeaderTop>
         <img
           src={cdcDigital}
@@ -16,8 +16,6 @@ const Header = () => {
         <Profile />
       </S.HeaderTop>
       <Navegation />
-    </div>
+    </>
   )
 }
-
-export default Header

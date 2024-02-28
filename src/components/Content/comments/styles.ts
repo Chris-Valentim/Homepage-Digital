@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const Comments = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 
   gap: 7px;
 `

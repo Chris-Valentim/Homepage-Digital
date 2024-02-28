@@ -1,53 +1,58 @@
 import * as S from './styles'
-import rectangle from '../../assets/rectangle.svg'
+import { RiArrowDownSFill  } from "react-icons/ri";
+import { MenuBurguer } from '../MenuBurguer'
 
-const Navegation = () => {
+export const Navegation = () => {
   return (
     <S.Wrapper>
-        <S.HeaderBottom>
-          <S.MenuHamburger>
-            <img
-              src={rectangle}
-              alt="Ícone do Menu"
-            />
-              <S.List href="/">
-                todos
-              </S.List>
-            <S.ArrowBottomIcon />
-          </S.MenuHamburger>
-            <S.List href="/">
-              Página principal
-            </S.List>
-            <S.List href="/">
-              Notícias
-            </S.List>
-            <S.List href="/">
-              Caixa de entrada
-            </S.List>
-            <S.List href="/">
-              Oportunidades internas
-            </S.List>
-            <S.List href="/">
-              Conti Cast
-            </S.List>
-            <S.List href="/">
-              Telefone/Ramais
-            </S.List>
-            <S.List href="/">
-              Aniversariantes do Mês
-            </S.List>
-          <S.Contact>
-              <S.List href="/">
-                Fale conosco
-              </S.List>
-            <S.ArrowBottomIcon />
-          </S.Contact>
-        </S.HeaderBottom>
-          <S.Hashtag>
-            <S.StyledHashtag>#</S.StyledHashtag>SOMOS <S.StyledHashtag>TODOS</S.StyledHashtag> CDC
-          </S.Hashtag>
-      </S.Wrapper>
+      <S.HeaderBottom>
+      <S.List>
+        <MenuBurguer />
+        <S.ArrowDown>
+          <RiArrowDownSFill 
+            size={20} 
+            color='white' 
+          />
+        </S.ArrowDown>
+      </S.List>
+      <S.NavContent>
+        <S.List>
+          <a href="/">Página principal</a>
+        </S.List>
+        <S.List>
+          <a href="/">Notícias</a>
+        </S.List>
+        <S.List>
+          <a href="/">Caixa de entrada</a>
+        </S.List>
+        <S.List>
+          <a href="/">Oportunidades internas</a>
+        </S.List>
+        <S.List>
+          <a href="/">Conti Cast</a>
+        </S.List>
+        <S.List>
+          <a href="/">Telefone/Ramais</a>
+        </S.List>
+        <S.List>
+          <a href="/">Aniversariantes do Mês</a>
+        </S.List>
+        <S.Contact>
+          <S.List>
+            <a href="/">Fale conosco</a>
+            <S.ArrowDown>
+              <RiArrowDownSFill 
+                size={20} 
+                color='white' 
+              />
+            </S.ArrowDown>
+          </S.List>
+        </S.Contact>
+      </S.NavContent>
+      </S.HeaderBottom>
+      <S.Hashtag>
+        <S.StyledHashtag>#</S.StyledHashtag>SOMOS <S.StyledHashtag> TODOS</S.StyledHashtag> CDC
+      </S.Hashtag>
+    </S.Wrapper>
   )
 }
-
-export default Navegation

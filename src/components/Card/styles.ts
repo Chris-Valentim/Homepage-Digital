@@ -1,19 +1,14 @@
 import styled from "styled-components"
-
+import CheckIcon from '../../assets/check.svg'
 
 export const Card = styled.div`
   display: flex;
   margin-top: 29px;
-  margin-right: 30px;
 
-  max-width: 700px;
+  width: 700px;
 `
 
-export const InfoCard = styled.div`
-  margin-left: 10px;
-`
-
-export const TitleCard = styled.h1`
+export const Title = styled.h3`
   font-size: 24px;
   font-weight: 400;
   color: var(--color-title-body);
@@ -22,14 +17,23 @@ export const TitleCard = styled.h1`
   margin-bottom: 31px;
 `
 
+export const InfoCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  margin-left: 10px;
+`
+
 export const Description = styled.p`
   font-size: 16px;
   font-weight: 400;
 `
 
-export const SubmitButton = styled.a`
+export const Link = styled.a`
   font-size: 14px;
   font-weight: 500;
+  color: var(--color-title-body);
 `
 
 export const Button = styled.div`
@@ -51,7 +55,10 @@ export const Date = styled.p`
   font-weight: 400;
 `
 
-export const Check = styled.img`
+export const Check = styled.img.attrs({
+  src: CheckIcon,
+  alt: 'visualizado'
+})`
   transform: translateX(-160%) translateY(60%);
   position: absolute;
 `

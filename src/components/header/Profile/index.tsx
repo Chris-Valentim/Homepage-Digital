@@ -1,18 +1,18 @@
 import * as S from './styles'
-import avatar from '../../assets/avatar.svg'
+import avatar from '../../../assets/avatar.svg'
 
-const Profile = () => {
+export const Profile = () => {
   return (
     <S.Wrapper>
       <S.Name>
         Olá, Marco Antônio! Design, Casa Di Condi
       </S.Name>
-      <img
-        src={avatar}
-        alt="Avatar"
-      />
+      <div>
+        <img
+          src={avatar}
+          alt="Avatar"
+        />
+      </div>
     </S.Wrapper>
   )
 }
-
-export default Profile

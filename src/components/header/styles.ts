@@ -5,5 +5,10 @@ export const HeaderTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+ 
+  @media(max-width: 968px) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }  
 `

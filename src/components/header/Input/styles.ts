@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Magnifier from '../../assets/magnifier.svg'
+import Magnifier from '../../../assets/magnifier.svg'
 
 export const Search = styled.div`
   display: flex;
@@ -13,9 +13,20 @@ export const ImageSearch = styled.div`
   background-repeat: no-repeat;
   background-position: center;
 
+  border-right: 1px solid white;
   border-radius: 20px 0 0 20px;
   width: 60px;
-  height: 62px;
+  height: 60px;
+
+  @media(max-width: 1176px) {
+    max-width: 380px;
+    height: 50px;
+  }
+
+  @media(max-width: 500px) {
+    max-width: 280px;
+    height: 45px;
+  }
 `
 
 export const Input = styled.input`
@@ -26,4 +37,14 @@ export const Input = styled.input`
 
   outline: none;
   font-size: 18px;
+
+  @media(max-width: 1176px) {
+    max-width: 380px;
+    height: 50px;
+  }
+
+  @media(max-width: 500px) {
+    max-width: 280px;
+    height: 45px;
+  }
 `

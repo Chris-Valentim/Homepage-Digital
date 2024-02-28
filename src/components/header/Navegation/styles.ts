@@ -1,57 +1,60 @@
 import styled from "styled-components";
-import arrowBottom from '../../assets/arrowBottom.svg'
+
 
 export const Wrapper = styled.div`
   background-color: var(--nav-background);
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media(max-width: 1038px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 `
 
 export const HeaderBottom = styled.nav`
   display: flex;
   align-items: center;
-  
-  gap: 30px;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  margin-left: 29px;
+
+  gap: 20px;
 `
 
-export const ArrowBottomIcon = styled.div`
-  background-image: url(${arrowBottom});
-  background-repeat: no-repeat;
-  height: 5px;
-  width: 8px;
+export const ArrowDown = styled.div`
+  display: flex;
+  padding-top: 10px;
 `
 
-export const MenuHamburger = styled.button`
- display: flex;
- justify-content: center;
- align-items: end;
+export const NavContent = styled.ul`
+  display: flex;
+  align-items: center;
 
- background-color: var(--nav-background);
- border: none;
- font-size: 14px;
- gap: 5px;
+  gap: 20px;
 
- &:hover {
-  cursor: pointer;
- }
-`
+  @media(max-width: 1038px) {
+    display: none;
+  }
+` 
 
-export const List = styled.a`
+export const List = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  color: var(--color-text-header);
-  text-decoration: none;
-  font-size: 14px;
 
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  a {
+    color: var(--color-text-header);
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 `
 
@@ -66,8 +69,15 @@ export const Contact = styled.button`
 `
 
 export const Hashtag = styled.p`
-  margin-right: 45px;
   color: #fff;
+
+  @media(max-width: 1250px) {
+    display: none;
+  }
+
+  @media(max-width: 1038px) {
+    display: flex;
+  }
 `
 
 export const StyledHashtag = styled.span`
