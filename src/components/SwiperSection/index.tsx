@@ -1,7 +1,9 @@
 import { Swiper } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Controls } from './components/Controls'
-import './styles'
+import './styles.css'
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface SwiperSectionProps {
   children: React.ReactNode
@@ -9,17 +11,43 @@ interface SwiperSectionProps {
 }
 
 
-export const SwiperSection = ({children, titleComponent}: SwiperSectionProps) => {
+export const SwiperSection = ({ children, titleComponent }: SwiperSectionProps) => {
   return (
-  <div>
-    <h3>{titleComponent}</h3>
-    <Swiper 
-      slidesPerView={3} 
-      modules={[Pagination]}
-    >
-      {children}
-      <Controls />
-    </Swiper>
-  </div>
+    <div>
+      <div className="line" />
+        <div className="title">{titleComponent}</div>
+      <Swiper
+        slidesPerView={2.5}
+        spaceBetween={30}
+        breakpoints={{
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          748: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1280: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }}
+        modules={[Pagination]}
+      >
+        <div>
+          {children}
+        </div>
+        <Controls />
+      </Swiper>
+    </div>
   )
 }

@@ -14,4 +14,8 @@ export const Container = styled.div`
 export const Button = styled.button`
   border: none;
   background-color: transparent;
+
+  > svg {
+    color: ${({disabled}) => (disabled ? '#9FB3C8' :'#070B8C')};
+  }
 `

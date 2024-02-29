@@ -42,8 +42,6 @@ export const Date = styled.p`
 
 export const Division = styled.div`
   border: 1px solid var(--input-text-darkgray);
-  margin-left: 29px;
-  margin-right: 29px;
   margin-top: 25px;
   margin-bottom: 25px;
 `

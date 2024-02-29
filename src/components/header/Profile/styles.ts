@@ -22,5 +22,7 @@ export const Name = styled.p`
 
   @media(max-width: 968px) {
     text-align: center;
+    font-size: 14px;
+    width: 140px;
   }
 `

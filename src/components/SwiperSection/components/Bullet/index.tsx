@@ -8,7 +8,9 @@ export const Bullet = ({ page, isActive, onClick }: BulletProps) => {
     <S.Indicator
       key={page}
       onClick={handleOnClick}
+      $isActive={isActive}
     >
+      
     </S.Indicator>
   )
 }

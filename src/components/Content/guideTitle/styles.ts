@@ -8,7 +8,6 @@ export const Header = styled.div`
 
   gap: 30px;
   margin-bottom: 30px;
-  margin-left: 29px;
   margin-right: 29px;
 `
 

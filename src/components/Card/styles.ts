@@ -3,9 +3,40 @@ import CheckIcon from '../../assets/check.svg'
 
 export const Card = styled.div`
   display: flex;
+  align-items: center;
+  gap: 10px;
   margin-top: 29px;
 
-  width: 700px;
+  @media(max-width: 748px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media(max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const Image = styled.div`
+  @media(max-width: 425px) {
+    height: auto;
+    width: 100%;
+  }
 `
 
 export const Title = styled.h3`
@@ -13,19 +44,38 @@ export const Title = styled.h3`
   font-weight: 400;
   color: var(--color-title-body);
 
-  margin-top: 29px;
-  margin-bottom: 31px;
+  margin-top: 19px;
+
+  @media(max-width: 425px) {
+    margin-top: 10px;
+  }
+
+  @media(min-width: 1024px) {
+    width: 100%;
+    max-width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 `
 
 export const InfoCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-  margin-left: 10px;
+  
+  gap: 10px;
+
+  @media(max-width: 425px) {
+    width: 100%;
+  }
 `
 
 export const Description = styled.p`
+  min-width: 200px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
   font-size: 16px;
   font-weight: 400;
 `
@@ -39,20 +89,24 @@ export const Link = styled.a`
 export const Button = styled.div`
   display: flex;
   align-items: center;
-  width: 115px;
-  gap: 6px;
+  gap: 2px;
 
   &:hover{
     cursor: pointer;
   }
 `
 
-export const Date = styled.p`
+export const Date = styled.div`
   display: flex;
-  margin-left: 250px;
+  justify-content: right;
   
   font-size: 12px;
   font-weight: 400;
+
+  @media(max-width: 425px) {
+    display: flex;
+    width: 300px;
+  }
 `
 
 export const Check = styled.img.attrs({

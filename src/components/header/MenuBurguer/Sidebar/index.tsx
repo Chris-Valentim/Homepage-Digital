@@ -14,7 +14,7 @@ export const Sidebar = ({ active } : any) => {
   }
 
   return (
-    <S.Container sidebar={active}>
+    <S.Container $sidebar={active}>
       <S.CloseTab onClick={closeSidebar}>
         <FaBars size={40}/>
         todos

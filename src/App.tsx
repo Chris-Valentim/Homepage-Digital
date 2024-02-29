@@ -1,10 +1,13 @@
 import { Content } from "./components/Content";
 import { Header } from "./components/Header";
+import { Card } from "./components/Card";
+
 import { SwiperSection } from "./components/SwiperSection";
 import { SwiperSlide } from "swiper/react";
+
+import LatestIcon from './assets/foundation.svg'
 import RelatedIcon from './assets/ballonRelacionados.svg'
-import { Card } from "./components/Card";
-import { relatedContent } from "./mock";
+import { latestContent, relatedContent } from "./mock";
 
 interface SwiperTitleProps {
   title: string;
@@ -20,18 +23,19 @@ const SwiperTitle = ({ title, iconPath }: SwiperTitleProps) => {
   )
 }
 
-
 function App() {
   return (
     <>
       <Header />
-      <Content />
-      <SwiperSection
-        titleComponent={<SwiperTitle title="Relacionados" iconPath={RelatedIcon} />}
-      >
-        {relatedContent.map((i) => (
-          <SwiperSlide>
-            <Card
+      <main>
+        <Content />
+        <SwiperSection
+          titleComponent={<SwiperTitle title="Relacionados" iconPath={RelatedIcon} />}
+        >
+          {relatedContent.map((i) => (
+            <SwiperSlide key={i.id}>
+              <Card
+              id={i.id}
               date={i.date}
               description={i.description}
               image={i.image}
@@ -39,9 +43,19 @@ function App() {
               title={i.title}
               wasViewed={i.wasViewed}
             />
-          </SwiperSlide>
-        ))}
-      </SwiperSection>
+            </SwiperSlide>
+          ))}
+        </SwiperSection>
+        <SwiperSection
+          titleComponent={<SwiperTitle title="Mais recentes" iconPath={LatestIcon} />}
+        >
+          {latestContent.map((i) => (
+            <SwiperSlide key={i.id}>
+              <Card {...i} />
+            </SwiperSlide>
+          ))}
+        </SwiperSection>
+      </main>
     </>
   );
 }

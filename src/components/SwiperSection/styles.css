@@ -1,0 +1,34 @@
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 6px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-title-body);
+}
+
+.border {
+  margin-right: 29px;
+  margin-bottom: 29px;
+}
+
+.line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--input-text-darkgray);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  font-size: 18px;
+  padding-bottom: 40px;
+  display: block;
+  object-fit: cover;
+}
+

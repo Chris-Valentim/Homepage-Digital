@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface SidebarProps {
-  sidebar: boolean
+  $sidebar: boolean
 }
 
 export const Container = styled.div<SidebarProps>`
@@ -11,8 +11,9 @@ export const Container = styled.div<SidebarProps>`
   top: 0px;
   left: 0px;
   width: 300px;
-  left: ${(props) => (props.sidebar ? '0' : '-100%')};
+  left: ${(props) => (props.$sidebar ? '0' : '-100%')};
   animation: showSidebar .4s;
+  z-index: 1000;
 
   > svg {
     position: fixed;
@@ -40,7 +41,6 @@ export const CloseTab = styled.p`
   display: flex;
   align-items: center;
   padding-top: 20px;
-  margin-left: 31px;
   width: 110px;
   color: #fff;
   gap: 5px;
@@ -67,7 +67,6 @@ export const Content = styled.div`
 export const Navegations = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-left: 31px;
   gap: 30px;
 `
 

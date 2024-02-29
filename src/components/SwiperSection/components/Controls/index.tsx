@@ -13,11 +13,12 @@ export const Controls = () => {
   const handleBulletClick = (index: number) => swiper.slideTo(index)
  
   const renderBullets = () => 
-    bullets.map((el) => (
+    bullets.map((bulletNumber) => (
       <Bullet
-        isActive={swiper.activeIndex === el}
+        key={bulletNumber}
+        isActive={swiper.activeIndex === bulletNumber}
         onClick={handleBulletClick}
-        page={el}
+        page={bulletNumber}
       />
     ))
   
@@ -29,12 +30,18 @@ export const Controls = () => {
 
   return (
     <S.Container>
-      <S.Button disabled={swiper.isBeginning} onClick={handlePrev}>
-        <RiArrowLeftSFill size={25} color="#070B8C"/>
+      <S.Button 
+        disabled={swiper.isBeginning} 
+        onClick={handlePrev}
+      >
+        <RiArrowLeftSFill size={25}/>
       </S.Button>
       {renderBullets()}
-      <S.Button disabled={swiper.isEnd} onClick={handleNext}>
-        <RiArrowRightSFill size={25} color="#070B8C"/>
+      <S.Button
+        disabled={swiper.isEnd} 
+        onClick={handleNext}
+      >
+        <RiArrowRightSFill size={25} />
       </S.Button>
     </S.Container>
   )
