@@ -51,7 +51,7 @@ export const Navegation = () => {
       </S.NavContent>
       </S.HeaderBottom>
       <S.Hashtag>
-        <S.StyledHashtag>#</S.StyledHashtag>SOMOS <S.StyledHashtag> TODOS</S.StyledHashtag> CDC
+        <S.StyledHashtag>#</S.StyledHashtag>SOMOS<S.StyledHashtag>TODOS</S.StyledHashtag>REACT
       </S.Hashtag>
     </S.Wrapper>
   )

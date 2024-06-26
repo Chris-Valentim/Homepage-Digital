@@ -1,9 +1,9 @@
 import * as S from './styles'
 import Photo1 from '../../assets/photo1.svg'
-import { GuideTitle } from './GuideTitle'
-import { Text } from './Text'
-import { ReactButton } from './ReactButton'
-import { Comments } from './Comments'
+import { GuideTitle } from './guideTitle'
+import { Text } from './text'
+import { ReactButton } from './reactButton'
+import { Comments } from './comments'
 
 export const Content = () => {
   return (
@@ -11,7 +11,7 @@ export const Content = () => {
       <GuideTitle />
       <S.Container>
         <S.Subtitle>
-          Novo visual do CDC digital
+          Novo visual do React
         </S.Subtitle>
         <S.Date>
           26/12/2022 15h05

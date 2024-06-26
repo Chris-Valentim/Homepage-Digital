@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import * as S from './styles'
 
-import cdcDigital from '../../assets/cdcDigital.svg'
+import logo from '../../assets/logo.svg'
 import { Input } from './Input'
 import { Profile } from './Profile'
 import { Navegation } from './Navegation'
@@ -24,8 +24,9 @@ export const Header = () => {
             <S.HeaderTopMobile>
               <S.Logotipo>
                 <img
-                  src={cdcDigital}
+                  src={logo}
                   alt="logo da empresa"
+                  className='logo'
                 />
               </S.Logotipo>
               <Profile />
@@ -39,8 +40,10 @@ export const Header = () => {
         <>
           <S.HeaderTop>
             <img
-              src={cdcDigital}
-              alt="logo da empresa" />
+              src={logo}
+              alt="logo da empresa" 
+              className='logo'
+            />
             <Input />
             <Profile />
           </S.HeaderTop>

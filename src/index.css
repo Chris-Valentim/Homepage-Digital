@@ -24,3 +24,7 @@ body {
 main {
   margin: 0 20px; 
 }
+
+.logo {
+  width: 150px;
+}

@@ -22,7 +22,7 @@ export interface latestContentProps {
 
 export const relatedContent: RelatedContentProps[] = [
   {
-    title: 'APP CDC',
+    title: 'APP React',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque...',
     date: '20/12/2022',
     image: Photo2,
@@ -106,7 +106,7 @@ export const latestContent: latestContentProps[] = [
     id: Math.random()
   },
   {
-    title: 'Novo visual do CDC digital',
+    title: 'Novo visual do React',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque...',
     date: '20/12/2022',
     image: Photo2,

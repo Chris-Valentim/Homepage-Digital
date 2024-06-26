@@ -1,5 +1,5 @@
 import { Content } from "./components/Content";
-import { Header } from "./components/Header";
+import { Header } from "./components/header";
 import { Card } from "./components/Card";
 
 import { SwiperSection } from "./components/SwiperSection";
@@ -35,14 +35,14 @@ function App() {
           {relatedContent.map((i) => (
             <SwiperSlide key={i.id}>
               <Card
-              id={i.id}
-              date={i.date}
-              description={i.description}
-              image={i.image}
-              link={i.link}
-              title={i.title}
-              wasViewed={i.wasViewed}
-            />
+                id={i.id}
+                date={i.date}
+                description={i.description}
+                image={i.image}
+                link={i.link}
+                title={i.title}
+                wasViewed={i.wasViewed}
+              />
             </SwiperSlide>
           ))}
         </SwiperSection>
