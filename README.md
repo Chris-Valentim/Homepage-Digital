@@ -8,11 +8,11 @@ Este projeto tem como objetivo demonstrar a construção de uma homepage digital
 
 Acesse o Projeto Completo aqui: 
 
-[Preview do Projeto Top](src/assets/PreviewTop.png)
+![Preview do Projeto Top](src/assets/PreviewTop.png)
 
 __________________________________________________________________________________________________________
 
-[Preview do Projeto Bottom](src/assets/PreviewBottom.png)
+![Preview do Projeto Bottom](src/assets/PreviewBottom.png)
 
 # Guia de Estilo do Front-end
 
