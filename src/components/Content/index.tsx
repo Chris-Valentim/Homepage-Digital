@@ -3,7 +3,7 @@ import Photo1 from '../../assets/photo1.svg'
 import { GuideTitle } from './guideTitle'
 import { Text } from './text'
 import { ReactButton } from './reactButton'
-import { Comments } from './comments'
+import { CommentsArea } from './comments'
 
 export const Content = () => {
   return (
@@ -34,7 +34,7 @@ export const Content = () => {
         <Text />
         <Text />
         <ReactButton />
-        <Comments />
+        <CommentsArea />
       </S.Description>
     </S.Wrapper>
   )
